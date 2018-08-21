@@ -1,0 +1,28 @@
+<!--pages/shopList/shopList.wxml-->
+<view class='shop' wx:for="{{shopLists}}" wx:key="id">
+  <!-- 图片区域 -->
+    <image src='{{item.imageUrl}}' mode='aspectFill' lazy-load='{{true}}'></image>
+
+    <!-- 信息区域 -->
+    <view class='shop-info'>
+      <text class='shop-title ellipsis'>{{item.title}}</text>
+      <text class='shop-tel ellipsis'>电话：{{item.tel}}</text>
+      <text class='shop-address ellipsis'>店铺地址：{{item.address}}</text>
+      <text class='shop-time ellipsis'>营业时间：{{item.time}}</text>
+    </view>
+
+    <!-- 评分星级 -->
+    <view class='shop-star'>
+      <view class='star-after'>★★★★★</view>
+      <view class='star-before' style='width:{{item.star}}'>★★★★★</view>
+    </view>
+
+    <!-- 分隔线 -->
+    <view class='divider'></view>
+</view>
+
+<!-- 加载更多 -->
+<view class='loadmore loading' style='margin-top:25rpx' wx:if="{{showLoading}}">
+  <text>加载更多...</text>
+</view>
+

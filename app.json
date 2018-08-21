@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/message/message",
+    "pages/contact/contact",
+    "pages/profile/profile",
+    "pages/shopList/shopList"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fed66d",
+    "navigationBarTitleText": "生活服务",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color":"#999",
+    "backgroundColor":"#fed66d",
+    "selectedColor": "red",
+    "list": [{
+      "pagePath": "pages/index/index",
+      "text": "首页",
+      "iconPath": "/assets/tabbar/snmarket_tab_brand_unselected.png",
+      "selectedIconPath": "/assets/tabbar/snmarket_tab_brand_selected.png"
+    },{
+      "pagePath": "pages/message/message",
+      "text": "消息",
+      "iconPath": "/assets/tabbar/snmarket_tab_brand_unselected.png",
+      "selectedIconPath": "/assets/tabbar/snmarket_tab_brand_selected.png"
+    },{
+      "pagePath": "pages/contact/contact",
+      "text": "联系人",
+      "iconPath": "/assets/tabbar/snmarket_tab_brand_unselected.png",
+      "selectedIconPath": "/assets/tabbar/snmarket_tab_brand_selected.png"
+    },{
+      "pagePath": "pages/profile/profile",
+      "text": "我",
+      "iconPath": "/assets/tabbar/snmarket_tab_brand_unselected.png",
+      "selectedIconPath": "/assets/tabbar/snmarket_tab_brand_selected.png"
+    }
+    ]
+  }
+}

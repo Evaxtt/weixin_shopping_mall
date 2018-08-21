@@ -1,0 +1,17 @@
+<!--pages/message/message.wxml-->
+<view class="card">
+  <text class='card-title'>美酒盛宴</text>
+  <text class="card-date">2018-07-28</text>
+  <image class='card-image' src='https://m.360buyimg.com/mobilecms/s1280x624_jfs/t21433/248/520863715/129747/ea6cdf98/5b101f9cN4c001e1c.jpg!cr_1125x549_0_72!q70.jpg.dpg.webp'></image>
+  <text class='card-desc'>好酒，请君品鉴</text>
+  <text class='card-read arrow'>查看详情</text>
+</view>
+
+
+<view class="card">
+  <text class='card-title'>美酒盛宴</text>
+  <text class="card-date">2018-07-28</text>
+  <image class='card-image' src='https://m.360buyimg.com/mobilecms/s1280x624_jfs/t21433/248/520863715/129747/ea6cdf98/5b101f9cN4c001e1c.jpg!cr_1125x549_0_72!q70.jpg.dpg.webp'></image>
+  <text class='card-desc'>好酒，请君品鉴</text>
+  <text class='card-read arrow'>查看详情</text>
+</view>

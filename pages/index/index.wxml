@@ -1,0 +1,65 @@
+<!--index.wxml-->
+<!-- 图片轮播区域 -->
+	<view class="slider">
+      <swiper indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}">
+        <block wx:for="{{imgUrls}}" wx:key="id">
+          <swiper-item>
+            <image src="{{item}}" lazy-load='{{true}}' mode='aspectFit'></image>
+          </swiper-item>
+        </block>
+      </swiper>
+	</view>
+
+	<!-- 导航区域 -->
+	<view class="index-nav">
+    <navigator class="nav-item bd-r" url="/pages/shopList/shopList">
+      <image src="/assets/icons/icon01.jpg" mode='aspectFit' lazy-load='{{true}}'></image>
+      <text>美食</text>
+    </navigator>
+    <navigator class="nav-item bd-r">
+      <image src="/assets/icons/icon02.jpg"></image>
+      <text>洗浴</text>
+    </navigator>
+    <navigator class="nav-item bd-r">
+      <image src="/assets/icons/icon03.jpg"></image>
+      <text>结婚</text>
+    </navigator>
+    <navigator class="nav-item bd-r">
+      <image src="/assets/icons/icon04.jpg"></image>
+      <text>卡拉ok</text>
+    </navigator>
+    <navigator class="nav-item bd-r">
+      <image src="/assets/icons/icon05.jpg"></image>
+      <text>找工作</text>
+    </navigator>
+    <navigator class="nav-item bd-r">
+      <image src="/assets/icons/icon06.jpg"></image>
+      <text>辅导班</text>
+    </navigator>
+    <navigator class="nav-item bd-r">
+      <image src="/assets/icons/icon07.jpg"></image>
+      <text>汽车保修</text>
+    </navigator>
+    <navigator class="nav-item bd-r">
+      <image src="/assets/icons/icon08.jpg"> </image>
+      <text>租房</text>
+    </navigator>
+    <navigator class="nav-item bd-r">
+      <image src="/assets/icons/icon09.jpg"> </image>
+      <text>装修</text>
+    </navigator>
+	</view>
+
+<!-- 间隔线 -->
+ <view class='divider'></view>
+ 
+ <!-- 首页入口区域 -->
+ <view class='index-enter'>
+    <navigator class='index-item'>
+      <image src='/assets/images/img5.jpg' mode='aspectFit'></image>
+    </navigator>
+    <navigator class='index-item'>
+      <image src='/assets/images/img6.jpg' mode='aspectFit'></image>
+    </navigator>
+ </view>
+

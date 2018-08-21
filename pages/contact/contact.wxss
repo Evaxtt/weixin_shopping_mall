@@ -1,0 +1,51 @@
+/* pages/contact/contact.wxss */
+.cell{
+  font-size: 16px;
+  background-color: #fff;
+}
+
+.cell-item{
+  border-bottom: 1rpx solid #ccc;
+  padding: 20rpx 30rpx;
+  display: flex;
+  justify-content: center;
+}
+.cell-item text{
+  width: 20%;
+  text-align: right;
+}
+.cell-item input{
+  width: 80%;
+  margin-left: 20rpx;
+}
+
+.cell-item radio-group{
+  width: 80%;
+  margin-left: 20rpx;
+}
+
+.cell-item radio-group radio{
+  margin-left: 20rpx;
+}
+
+.cell-item checkbox-group{
+  width: 80%;
+  margin-left: 20rpx;
+}
+
+.cell-item checkbox-group checkbox{
+  margin-left: 20rpx;
+}
+
+.cell-item picker{
+  width: 80%;
+  margin-left: 20rpx;
+}
+.cell-item textarea{
+  width: 80%;
+  margin-left: 20rpx;
+}
+
+page{
+  background-color: #f1f1f1;
+}

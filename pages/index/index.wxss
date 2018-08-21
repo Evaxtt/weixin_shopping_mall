@@ -1,0 +1,50 @@
+/**index.wxss**/
+.slider{
+  width: 100%;
+  height: 360rpx;
+  overflow: hidden;
+}
+swiper{
+  height: 100%;
+}
+.slider image{
+	width: 100%;
+  height: 360rpx;
+}
+.index-nav{
+  display: flex;
+  flex-wrap: wrap;
+}
+.index-nav .nav-item{
+  width: 33.3333%;
+  height: 200rpx;
+  box-sizing: border-box;
+  border-bottom: 1rpx solid #ccc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+ .nav-item::after:nth-child(3n){
+  content: none;
+}
+.index-nav .nav-item image{
+  width: 102rpx;
+  height: 102rpx;
+}
+/* 首页入口区域 */
+.index-enter{
+  display: flex;
+  padding: 20rpx 30rpx;
+  background-color: #fff;
+}
+.index-item{
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.index-item image{
+  height: 217rpx;
+}

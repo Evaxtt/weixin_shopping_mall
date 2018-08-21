@@ -1,0 +1,74 @@
+<!--pages/contact/contact.wxml-->
+<form bindsubmit='submitData' bindreset='resetData'>
+<view class='cell'>
+  <view class='cell-item'>
+    <text>用户注册</text>
+  </view>
+  <view class='cell-item'>
+    <text>用户名:</text>
+    <input name="uname" placeholder='登录用户名'></input>
+  </view>
+  <view class='cell-item'>
+    <text>密码:</text>
+    <input name="pword" placeholder='登录密码' password='{{true}}'></input>
+  </view>
+  <view class='cell-item'>
+    <text>年龄:</text>
+    <!-- type='number' 在手机上生效  -->
+    <input name="uage" placeholder='输入年龄' type='number'></input>
+  </view>
+  <view class='cell-item'>
+    <text>性别:</text>
+    <radio-group name="ugender" bindchange="changeGender" >
+      <radio checked='{{ gender }}' value='男'>男</radio>
+      <radio value='女'>女</radio>
+    </radio-group>
+  </view>
+  <view class='cell-item'>
+    <text>爱好:</text>
+    <checkbox-group name="uhobby" bindchange="changeHobby">
+      <checkbox checked='{{true}}' value='读书'>读书</checkbox>
+      <checkbox value='写字'>写字</checkbox>
+      <checkbox value='打球'>打球</checkbox>
+      <checkbox value='唱歌'>唱歌</checkbox>
+    </checkbox-group>
+  </view>
+
+  <view class='cell-item'>
+    <text>生日:</text>
+    <picker mode="date"  start="1970-01-01" bindchange='selectBirthDate'>
+    <input name="ubirth" placeholder='请选择出生日期' value='{{birthDate}}'></input>
+    </picker>
+  </view>
+
+  <view class='cell-item'>
+    <text>出生地:</text>
+    <picker mode="region"  value='{{region}}' bindchange='selectBirthPlace'>
+    <input name="uplace" placeholder='请选择出生地' value='{{birthPlace}}'></input>
+    </picker>
+  </view>
+
+  <view class='cell-item'>
+    <text>介绍:</text>
+    <textarea name="uarea" placeholder="个人情况说明" maxlength='50' style='height:50px'></textarea>
+  </view>
+
+  <view class='cell-item'>
+    <button formType="submit">Submit</button>
+    <button formType="reset">Reset</button>
+  </view>
+
+</view>
+</form>
+
+
+<wxs module="foo">
+var some_msg = "hello world"; 
+module.exports = {    msg : some_msg, }
+</wxs>
+<view> {{foo.msg}} </view>
+
+<wxs src="contact.wxs" module="tools" />
+<view> {{tools.foo}} </view>
+<view> {{tools.bar(10)}} </view>
+<view> {{tools.msg}} </view>
